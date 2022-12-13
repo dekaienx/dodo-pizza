@@ -1,0 +1,276 @@
+@font-face {
+	font-family: 'Dodo Rounded';
+	src: url(../font/Dodo.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Dodo Rounded";
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.main {
+	margin: 20px 185px 20px 150px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logoHeader {
+	display: flex;
+}
+
+.logo {
+	display: flex;
+}
+
+.logo>div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left: 10px;
+}
+
+.logoHeader>a>img {
+	width: 55px;
+}
+
+.buttonHeader {
+	border: none;
+	font-size: 14px;
+	color: rgb(92, 99, 112);
+	padding: 11px 19px;
+	border-radius: 25px;
+	background-color: rgb(243, 243, 247);
+	cursor: pointer;
+	transition-duration: .5s;
+}
+
+.buttonHeader:hover {
+	color: black;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	margin: 25px 0px 25px 0px;
+	align-items: center;
+}
+
+.nav>ul {
+	display: flex;
+	justify-content: space-between;
+	white-space: nowrap;
+	list-style: none;
+}
+
+.nav>ul>li {
+	margin-left: 17px;
+}
+
+.nav>ul>li>a {
+	color: rgb(92, 99, 112);
+	font-size: 14px;
+	transition-duration: 0.2s;
+}
+
+.nav>ul>li>a:hover {
+	color: rgb(255, 105, 0);
+}
+
+.cartNav {
+	border: none;
+	font-size: 16px;
+	color: white;
+	padding: 8px 20px;
+	height: 40px;
+	border-radius: 25px;
+	background-color: rgb(255, 105, 0);
+	cursor: pointer;
+	transition-duration: .3s;
+}
+
+.cartNav:hover {
+	background-color: rgb(223, 93, 0);
+}
+
+.pizza {
+	font-size: 24px;
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.pizzaCard {
+	display: flex;
+	flex-direction: column;
+	margin: 40px 0px;
+	justify-content: space-between;
+	height: 440px;
+	width: 235px;
+	cursor: pointer;
+}
+
+.pizzaImg {
+	text-align: center;
+}
+
+.pizzaImg>img {
+	width: 220px;
+	transition-duration: .3s;
+}
+
+.pizzaImg>img:hover {
+	transform: translateY(5px);
+}
+
+.pizzaName {
+	font-size: 20px;
+	line-height: 24px;
+	margin: 8px 0px;
+}
+
+.pizzaDesc {
+	font-size: 14px;
+	line-height: 21px;
+	color: rgb(92, 99, 112);
+}
+
+.pizzaPrice {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 16px;
+}
+
+.pizzaPrice>button {
+	color: rgb(209, 87, 0);
+	background-color: rgb(240, 240, 240);
+	height: 40px;
+	min-width: 120px;
+	font-size: 16px;
+	border: none;
+	border-radius: 20px;
+	transition-duration: .2s;
+	cursor: pointer;
+}
+
+.pizzaPrice>button:hover {
+	background-color: rgb(255, 210, 179);
+}
+
+footer {
+	background-color: rgb(24, 24, 24);
+	padding: 20px 185px 20px 150px;
+	font-size: 14px;
+	height: 140px;
+}
+
+.footer {
+	display: flex;
+	height: 100%;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: space-between;
+	color: rgb(185, 185, 185);
+}
+
+.navFooter {
+	display: flex;
+}
+
+.navFooter>ul {
+	list-style: none;
+	display: flex;
+}
+
+.navFooter>ul>li {
+	margin-left: 25px;
+	cursor: pointer;
+}
+
+.navFooter>ul>li>a {
+	color: rgb(185, 185, 185)
+}
+
+.navFooter>ul>li>a:hover {
+	color: white;
+}
+
+.infoFooter {
+	display: flex;
+	flex-direction: column;
+	color: rgb(68, 73, 81);
+	font-size: 12px;
+	line-height: 17px;
+}
+
+@media (max-width: 1180px) {
+ 	.cards {
+		justify-content: space-around;
+	}
+	
+	.nav {
+		flex-wrap: wrap;
+	}
+
+	.nav>ul {
+		white-space: nowrap;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.nav>ul>li {
+		background-color: rgb(243, 243, 247);
+		border-radius: 15px;
+		padding: 5px 10px;
+		margin-top: 5px;
+	}
+
+	.cartNav {
+		margin-top: 15px;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media (max-width: 360px) {
+	.cards {
+		justify-content: center;
+	}
+	
+	.nav>ul>li {
+		flex-wrap: wrap;
+	}
+
+	.main {
+		margin: 10px 10px;
+	}
+
+	footer {
+		padding: 10px 10px;
+	}
+
+	.navFooter {
+		white-space: nowrap;
+	}
+
+	.navFooter>ul {
+		flex-wrap: wrap;
+	}
+
+	.navFooter>ul>li {
+		line-height: 15px;
+	}
+}
